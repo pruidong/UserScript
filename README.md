@@ -15,6 +15,12 @@
 
 请发起一个[issue](https://github.com/pruidong/UserScript/issues).
 
+# 相关
+
+## 文字滚动器(QQ小程序,微信小程序)
+
+![二维码](https://github.com/pruidong/UserScript/blob/main/textscorll.jpg)
+
 # 版权
 
 > GPL 3.0
