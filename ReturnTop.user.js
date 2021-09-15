@@ -135,7 +135,7 @@
     registerMenuCommand();
     const speed = 1000;//自定义滚动速度;
     $(".ReturnTopUserScript55658905,.returnTopUserScript656569895").click(function(){
-       $("html,body").animate({ "scrollTop" : 0 }, speed);
+       $("html,body,div").animate({ "scrollTop" : 0 }, speed);
     });
     // 注册脚本菜单
     function registerMenuCommand() {
