@@ -3,7 +3,7 @@
 // @name:zh      一键返回顶部
 // @name:zh-CN   一键返回顶部
 // @namespace    https://greasyfork.org/zh-CN/scripts/432151
-// @version      0.3
+// @version      0.4
 // @description  一键返回顶部.提供位置,背景,大小切换. 提示: 如需支持文件网址,需要给扩展访问文件网址的权限.
 // @author       pruidong
 // @match        *://*/*
