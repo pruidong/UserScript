@@ -3,7 +3,7 @@
 // @name:zh      一键返回顶部
 // @name:zh-CN   一键返回顶部
 // @namespace    https://greasyfork.org/zh-CN/scripts/432151
-// @version      0.4
+// @version      0.5
 // @description  一键返回顶部.提供位置,背景,大小切换. 提示: 如需支持文件网址,需要给扩展访问文件网址的权限.
 // @author       pruidong
 // @match        *://*/*
@@ -118,7 +118,7 @@
             nextPositionTitle="左上";
             nextPosition=1;
     }
-    const html=`<div class='ReturnTopUserScript55658905' style='position:fixed;${positionClass}border-radius:5px;z-index:100000;'><div style='width:${parseInt(imageSize)}px;height:${parseInt(imageSize)}px;background:url(${backgroundSetting}) no-repeat;background-size: auto;' class='returnTopUserScript656569895'></div></div>`;
+    const html=`<div class='ReturnTopUserScript55658905' style='position:fixed;${positionClass}border-radius:5px;z-index:100000;padding:5px;'><div style='width:${parseInt(imageSize)}px;height:${parseInt(imageSize)}px;background:url(${backgroundSetting}) no-repeat;background-size: auto;' class='returnTopUserScript656569895'></div></div>`;
     $("body").append(html);
     if(autoHideBtn=="Y"){
         $(".ReturnTopUserScript55658905,.returnTopUserScript656569895").hide();
@@ -130,7 +130,14 @@
             }
         })
     }
-
+    $('.ReturnTopUserScript55658905').hover(
+               function () {
+                  $(this).css({"background-color":"#cfe2f3"});
+               },
+               function () {
+                  $(this).css({"background-color":""});
+               }
+     );
     let menu_feedBack_ID=null,menu_background_ID=null,menu_imageSize_ID=null,menu_position_ID=null,menu_defaultSetting_ID=null,auto_hideBtn_ID=null;
     registerMenuCommand();
     const speed = 1000;//自定义滚动速度;
